@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700B7762FAF4B08EFD84E5A5 /* Pods_SnapTwat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3808F2BCB2498C2996CFB9 /* Pods_SnapTwat.framework */; };
+		DE05E84B2011581400C0C90A /* SelectReceiverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05E84A2011581400C0C90A /* SelectReceiverVC.swift */; };
+		DE54D51D200F7B4400F4EBB4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D51C200F7B4400F4EBB4 /* AuthService.swift */; };
+		DE54D51F200F7D9900F4EBB4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D51E200F7D9900F4EBB4 /* DataService.swift */; };
+		DE54D521200F836E00F4EBB4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D520200F836E00F4EBB4 /* RegisterVC.swift */; };
+		DE54D526200F84C100F4EBB4 /* CustomizedVCTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D524200F84C100F4EBB4 /* CustomizedVCTransitions.swift */; };
+		DE54D528200F94D500F4EBB4 /* ShowToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D527200F94D500F4EBB4 /* ShowToast.swift */; };
+		DE54D52A200FA56C00F4EBB4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D529200FA56C00F4EBB4 /* LoginVC.swift */; };
+		DE54D52C200FDE8F00F4EBB4 /* TwatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D52B200FDE8F00F4EBB4 /* TwatListVC.swift */; };
+		DE54D52E200FDE9E00F4EBB4 /* TwatViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D52D200FDE9E00F4EBB4 /* TwatViewVC.swift */; };
+		DE54D532200FF04C00F4EBB4 /* SendTwatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D531200FF04C00F4EBB4 /* SendTwatVC.swift */; };
+		DE936529200E943D00F32E55 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE936528200E943D00F32E55 /* InsetTextField.swift */; };
+		DE93652B200E980B00F32E55 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93652A200E980B00F32E55 /* AuthVC.swift */; };
+		DE9D9717200D5293006775A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9D9716200D5293006775A9 /* AppDelegate.swift */; };
+		DE9D971C200D5293006775A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9D971A200D5293006775A9 /* Main.storyboard */; };
+		DE9D971E200D5293006775A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9D971D200D5293006775A9 /* Assets.xcassets */; };
+		DE9D9721200D5293006775A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9D971F200D5293006775A9 /* LaunchScreen.storyboard */; };
+		DE9D9729200D5342006775A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE9D9728200D5341006775A9 /* GoogleService-Info.plist */; };
+		DEC84FE72011D9E300AA985A /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC84FE62011D9E300AA985A /* UserCell.swift */; };
+		DEC84FE920124D9E00AA985A /* NewTwatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC84FE820124D9E00AA985A /* NewTwatCell.swift */; };
+		DEC84FED201296DD00AA985A /* Twat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC84FEC201296DD00AA985A /* Twat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F3808F2BCB2498C2996CFB9 /* Pods_SnapTwat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapTwat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAF37BEA75B72108725CF8F /* Pods-SnapTwat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapTwat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapTwat/Pods-SnapTwat.debug.xcconfig"; sourceTree = "<group>"; };
+		DE05E84A2011581400C0C90A /* SelectReceiverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectReceiverVC.swift; sourceTree = "<group>"; };
+		DE54D51C200F7B4400F4EBB4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DE54D51E200F7D9900F4EBB4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		DE54D520200F836E00F4EBB4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		DE54D524200F84C100F4EBB4 /* CustomizedVCTransitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedVCTransitions.swift; sourceTree = "<group>"; };
+		DE54D527200F94D500F4EBB4 /* ShowToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowToast.swift; sourceTree = "<group>"; };
+		DE54D529200FA56C00F4EBB4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DE54D52B200FDE8F00F4EBB4 /* TwatListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwatListVC.swift; sourceTree = "<group>"; };
+		DE54D52D200FDE9E00F4EBB4 /* TwatViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwatViewVC.swift; sourceTree = "<group>"; };
+		DE54D531200FF04C00F4EBB4 /* SendTwatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTwatVC.swift; sourceTree = "<group>"; };
+		DE936528200E943D00F32E55 /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		DE93652A200E980B00F32E55 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		DE9D9713200D5293006775A9 /* SnapTwat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapTwat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9D9716200D5293006775A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE9D971B200D5293006775A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE9D971D200D5293006775A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE9D9720200D5293006775A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE9D9722200D5293006775A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE9D9728200D5341006775A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEC84FE62011D9E300AA985A /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		DEC84FE820124D9E00AA985A /* NewTwatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTwatCell.swift; sourceTree = "<group>"; };
+		DEC84FEC201296DD00AA985A /* Twat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twat.swift; sourceTree = "<group>"; };
+		E753B708E9F1267EFAC15474 /* Pods-SnapTwat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapTwat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapTwat/Pods-SnapTwat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE9D9710200D5293006775A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700B7762FAF4B08EFD84E5A5 /* Pods_SnapTwat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07BA890659D9C513BED61970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F3808F2BCB2498C2996CFB9 /* Pods_SnapTwat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99DE5B3A06D4C245A393F459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FAF37BEA75B72108725CF8F /* Pods-SnapTwat.debug.xcconfig */,
+				E753B708E9F1267EFAC15474 /* Pods-SnapTwat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE54D51B200F7B2E00F4EBB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DE54D51C200F7B4400F4EBB4 /* AuthService.swift */,
+				DE54D51E200F7D9900F4EBB4 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DE54D522200F84A200F4EBB4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE54D524200F84C100F4EBB4 /* CustomizedVCTransitions.swift */,
+				DE54D527200F94D500F4EBB4 /* ShowToast.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE936525200E940400F32E55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE93652A200E980B00F32E55 /* AuthVC.swift */,
+				DE54D520200F836E00F4EBB4 /* RegisterVC.swift */,
+				DE54D529200FA56C00F4EBB4 /* LoginVC.swift */,
+				DE54D52B200FDE8F00F4EBB4 /* TwatListVC.swift */,
+				DE54D52D200FDE9E00F4EBB4 /* TwatViewVC.swift */,
+				DE54D531200FF04C00F4EBB4 /* SendTwatVC.swift */,
+				DE05E84A2011581400C0C90A /* SelectReceiverVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE936526200E940D00F32E55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE936528200E943D00F32E55 /* InsetTextField.swift */,
+				DEC84FE62011D9E300AA985A /* UserCell.swift */,
+				DEC84FE820124D9E00AA985A /* NewTwatCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE936527200E941100F32E55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEC84FEC201296DD00AA985A /* Twat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9D970A200D5293006775A9 = {
+			isa = PBXGroup;
+			children = (
+				DE9D9715200D5293006775A9 /* SnapTwat */,
+				DE9D9714200D5293006775A9 /* Products */,
+				99DE5B3A06D4C245A393F459 /* Pods */,
+				07BA890659D9C513BED61970 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE9D9714200D5293006775A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE9D9713200D5293006775A9 /* SnapTwat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE9D9715200D5293006775A9 /* SnapTwat */ = {
+			isa = PBXGroup;
+			children = (
+				DE54D522200F84A200F4EBB4 /* Extension */,
+				DE54D51B200F7B2E00F4EBB4 /* Services */,
+				DE936527200E941100F32E55 /* Model */,
+				DE936526200E940D00F32E55 /* View */,
+				DE936525200E940400F32E55 /* Controller */,
+				DE9D9716200D5293006775A9 /* AppDelegate.swift */,
+				DE9D971A200D5293006775A9 /* Main.storyboard */,
+				DE9D971D200D5293006775A9 /* Assets.xcassets */,
+				DE9D971F200D5293006775A9 /* LaunchScreen.storyboard */,
+				DE9D9722200D5293006775A9 /* Info.plist */,
+				DE9D9728200D5341006775A9 /* GoogleService-Info.plist */,
+			);
+			path = SnapTwat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE9D9712200D5293006775A9 /* SnapTwat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE9D9725200D5293006775A9 /* Build configuration list for PBXNativeTarget "SnapTwat" */;
+			buildPhases = (
+				F9235753875C4F7E8DB8E3B4 /* [CP] Check Pods Manifest.lock */,
+				DE9D970F200D5293006775A9 /* Sources */,
+				DE9D9710200D5293006775A9 /* Frameworks */,
+				DE9D9711200D5293006775A9 /* Resources */,
+				7D075ADA67D0238807DAD6B4 /* [CP] Embed Pods Frameworks */,
+				504EDF73B15D4A78AF01E99C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapTwat;
+			productName = SnapTwat;
+			productReference = DE9D9713200D5293006775A9 /* SnapTwat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE9D970B200D5293006775A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Le Dang Dai Duong";
+				TargetAttributes = {
+					DE9D9712200D5293006775A9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE9D970E200D5293006775A9 /* Build configuration list for PBXProject "SnapTwat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE9D970A200D5293006775A9;
+			productRefGroup = DE9D9714200D5293006775A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE9D9712200D5293006775A9 /* SnapTwat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE9D9711200D5293006775A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9D9721200D5293006775A9 /* LaunchScreen.storyboard in Resources */,
+				DE9D9729200D5342006775A9 /* GoogleService-Info.plist in Resources */,
+				DE9D971E200D5293006775A9 /* Assets.xcassets in Resources */,
+				DE9D971C200D5293006775A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		504EDF73B15D4A78AF01E99C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapTwat/Pods-SnapTwat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D075ADA67D0238807DAD6B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapTwat/Pods-SnapTwat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9235753875C4F7E8DB8E3B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE9D970F200D5293006775A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE93652B200E980B00F32E55 /* AuthVC.swift in Sources */,
+				DE54D52C200FDE8F00F4EBB4 /* TwatListVC.swift in Sources */,
+				DE9D9717200D5293006775A9 /* AppDelegate.swift in Sources */,
+				DE54D532200FF04C00F4EBB4 /* SendTwatVC.swift in Sources */,
+				DE936529200E943D00F32E55 /* InsetTextField.swift in Sources */,
+				DEC84FED201296DD00AA985A /* Twat.swift in Sources */,
+				DE54D52E200FDE9E00F4EBB4 /* TwatViewVC.swift in Sources */,
+				DEC84FE920124D9E00AA985A /* NewTwatCell.swift in Sources */,
+				DE54D528200F94D500F4EBB4 /* ShowToast.swift in Sources */,
+				DE05E84B2011581400C0C90A /* SelectReceiverVC.swift in Sources */,
+				DEC84FE72011D9E300AA985A /* UserCell.swift in Sources */,
+				DE54D52A200FA56C00F4EBB4 /* LoginVC.swift in Sources */,
+				DE54D521200F836E00F4EBB4 /* RegisterVC.swift in Sources */,
+				DE54D51D200F7B4400F4EBB4 /* AuthService.swift in Sources */,
+				DE54D526200F84C100F4EBB4 /* CustomizedVCTransitions.swift in Sources */,
+				DE54D51F200F7D9900F4EBB4 /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE9D971A200D5293006775A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE9D971B200D5293006775A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE9D971F200D5293006775A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE9D9720200D5293006775A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE9D9723200D5293006775A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE9D9724200D5293006775A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE9D9726200D5293006775A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAF37BEA75B72108725CF8F /* Pods-SnapTwat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H8VZQM87Q;
+				INFOPLIST_FILE = SnapTwat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinme.SnapTwat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE9D9727200D5293006775A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E753B708E9F1267EFAC15474 /* Pods-SnapTwat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H8VZQM87Q;
+				INFOPLIST_FILE = SnapTwat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinme.SnapTwat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE9D970E200D5293006775A9 /* Build configuration list for PBXProject "SnapTwat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9D9723200D5293006775A9 /* Debug */,
+				DE9D9724200D5293006775A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE9D9725200D5293006775A9 /* Build configuration list for PBXNativeTarget "SnapTwat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9D9726200D5293006775A9 /* Debug */,
+				DE9D9727200D5293006775A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE9D970B200D5293006775A9 /* Project object */;
+}
