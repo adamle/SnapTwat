@@ -17,6 +17,8 @@ class DataService {
     
     public private(set) var REF_DATABASE = DB_BASE
     public private(set) var REF_USERS = DB_BASE.child("users")
+    public private(set) var REF_DESTROYCOUNTER = DB_BASE.child("destroyCounter")
+    
     public private(set) var REF_STORAGE = SR_BASE
     public private(set) var REF_TWATIMAGE = SR_BASE.child("twatImages")
     
@@ -100,9 +102,49 @@ class DataService {
     
     func deleteTwat(ofUID uid: String, twat: Twat, handler: @escaping (_ success: Bool) -> ()) {
         REF_USERS.child(uid).child("Twats").child(twat.twatKey).removeValue()
+    }
+    
+    func deleteImage(ofTwat twat: Twat, handler: @escaping (_ success: Bool) -> ()) {
         REF_TWATIMAGE.child(twat.imageName).delete(completion: nil)
     }
     
+    func setDestroyCounter(forTwatImage imageName: String, count: Int, completion: @escaping(_ status: Bool) -> ()) {
+        REF_DESTROYCOUNTER.childByAutoId().updateChildValues(["imageName": imageName, "count" : count])
+        completion(true)
+    }
+    
+    func decreaseDestroyCounter(forTwatImage imageName: String, handler: @escaping (_ result: Int) -> ()) {
+        REF_DESTROYCOUNTER.observeSingleEvent(of: .value) { (counterSnapshot) in
+            guard let counterSnapshot = counterSnapshot.children.allObjects as? [DataSnapshot] else { return}
+            
+            for counter in counterSnapshot {
+                let imageNameSnapshot = counter.childSnapshot(forPath: "imageName").value as! String
+                if imageNameSnapshot == imageName {
+                    let count = counter.childSnapshot(forPath: "count").value as! Int
+                    let result = count - 1
+                    self.REF_DESTROYCOUNTER.child(counter.key).updateChildValues(["count": result])
+                    handler(result)
+                    return
+                }
+            }
+        }
+    }
+    
+    func deleteDestroyCounter(forTwatImage imageName: String, handler: @escaping (_ success: Bool) -> ()) {
+        REF_DESTROYCOUNTER.observeSingleEvent(of: .value) { (counterSnapshot) in
+            guard let counterSnapshot = counterSnapshot.children.allObjects as? [DataSnapshot] else { return}
+            
+            for counter in counterSnapshot {
+                let imageNameSnapshot = counter.childSnapshot(forPath: "imageName").value as! String
+                if imageNameSnapshot == imageName {
+                    self.REF_DESTROYCOUNTER.child(counter.key).removeValue()
+                    return
+                }
+            }
+            
+            handler(true)
+        }
+    }
 }
 
 

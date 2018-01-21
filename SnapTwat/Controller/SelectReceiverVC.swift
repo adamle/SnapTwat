@@ -49,22 +49,16 @@ class SelectReceiverVC: UIViewController {
             })
         }
 
+        DataService.instance.setDestroyCounter(forTwatImage: self.imageName, count: self.chosenEmailArray.count, completion: { (success) in
+            if success {
+                print("Success set destroy counter for twatImage: \(self.imageName)")
+            }
+        })
+        
         self.present(twatListVC, animated: true, completion: nil)
     }
     
 }
-
-
-//for email in chosenEmailArray {
-//    DataService.instance.getUid(forEmail: email, handler: { (uid) in
-//        DataService.instance.sendTwatToUser(withUID: uid , fromEmail: (Auth.auth().currentUser?.email)!, twatUrl: self.imageUrlString) { (success) in
-//            if !success {
-//                self.showToast(message: "Sorry, I'm unable to send Twat at the moment!")
-//            }
-//        }
-//    })
-//}
-
 
 extension SelectReceiverVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

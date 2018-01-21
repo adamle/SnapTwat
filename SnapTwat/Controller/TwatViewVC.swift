@@ -29,6 +29,20 @@ class TwatViewVC: UIViewController {
                     print("Success delete twat!")
                 }
             })
+            DataService.instance.decreaseDestroyCounter(forTwatImage: twat.imageName, handler: { (count) in
+                let result = count
+                if result == 0 {
+                    DataService.instance.deleteImage(ofTwat: self.twat, handler: { (success) in
+                        if success {
+                        }
+                    })
+                    DataService.instance.deleteDestroyCounter(forTwatImage: self.twat.imageName, handler: { (success) in
+                        if !success {
+                            print("Error in deleteDestroyCounter")
+                        }
+                    })
+                }
+            })
         }
     }
     
